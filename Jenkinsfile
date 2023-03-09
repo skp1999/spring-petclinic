@@ -9,7 +9,6 @@ pipeline {
       }
     }
     stage('Docker build') {
-      agent any
       steps {
         sh 'docker build -t demo/spring-petclinic:latest'
       }
